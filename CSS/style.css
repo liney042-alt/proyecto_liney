@@ -1,0 +1,141 @@
+/* Fuente general */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #0d6efd, #20c997);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffe082 !important; /* amarillo dorado */
+}
+
+/* HERO */
+#hero {
+  position: relative;
+  background-blend-mode: darken;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+#hero h1 {
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+#hero p {
+  color: #f1f1f1;
+}
+
+#hero .btn {
+  background: #20c997;
+  border: none;
+  transition: 0.3s ease;
+}
+
+#hero .btn:hover {
+  background: #198754;
+  transform: scale(1.05);
+}
+
+/* Sección Servicios */
+#servicios h2 {
+  color: #0d6efd;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  color: #20c997;
+  font-weight: 600;
+}
+
+/* Galería */
+#galeria img {
+  transition: transform 0.4s ease;
+}
+
+#galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Tabla precios */
+table thead {
+  background: linear-gradient(90deg, #0d6efd, #20c997);
+  color: white;
+}
+
+table tbody tr:hover {
+  background-color: #eaf4ff;
+}
+
+/* Contacto */
+#contacto h2 {
+  color: #0d6efd;
+}
+
+#contacto button {
+  background: linear-gradient(90deg, #20c997, #0d6efd);
+  border: none;
+}
+
+#contacto button:hover {
+  background: linear-gradient(90deg, #0d6efd, #20c997);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #0d6efd, #20c997);
+  font-size: 0.9rem;
+}
+
+/* Links del menú */
+.nav-link {
+  color: #fff !important;          /* Siempre blancas */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffe082 !important;       /* Amarillo dorado al pasar */
+}
